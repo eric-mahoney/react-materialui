@@ -1,6 +1,6 @@
 import Drawer from "@material-ui/core/Drawer";
 import { Divider, List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
-import { AccountCircle, Search, TrendingUp } from "@material-ui/icons";
+import { AccountCircle, LocalBar, Search, TrendingUp } from "@material-ui/icons";
 
 const Sidebar = () => {
   return (
@@ -10,16 +10,16 @@ const Sidebar = () => {
           <ListItemIcon>
             <AccountCircle />
           </ListItemIcon>
-          <ListItemText primary="User Account" />
+          <ListItemText primary="Account" />
         </ListItem>
       </List>
       <Divider />
       <List>
         <ListItem button>
           <ListItemIcon>
-            <TrendingUp />
+            <LocalBar />
           </ListItemIcon>
-          <ListItemText primary="Trending" />
+          <ListItemText primary="See Breweries" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
