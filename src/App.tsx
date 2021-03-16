@@ -1,22 +1,12 @@
 import "./App.css";
-import Drawer from "@material-ui/core/Drawer";
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
-import { Search } from "@material-ui/icons";
+import Sidebar from "./components/Sidebar";
+import { Box } from "@material-ui/core";
 
 function App() {
   return (
-    <div>
-      <Drawer variant="permanent" anchor="left">
-        <List>
-          <ListItem button>
-            <ListItemIcon>
-              <Search />
-            </ListItemIcon>
-            <ListItemText primary="Search" />
-          </ListItem>
-        </List>
-      </Drawer>
-    </div>
+    <Box component="div">
+      <Sidebar />
+    </Box>
   );
 }
 
